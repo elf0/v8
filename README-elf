@@ -2,3 +2,11 @@ v8
 ==
 
 Study/Compile/debug v8 easily by QtCreator.
+
+Steps:
+1: Merge this project dirs to v8-3.25.0
+2: make dependencies
+3: make x64.release library=shared -j4
+4: Copy libicuuc.so,libicui18n.so in "./out/x64.release" to "./lib" dir(Let's focus v8).
+5: Open v8.pro with QtCreator
+
